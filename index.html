@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.min.css " />
+    <title>Central Music</title>
+</head>
+
+<body>
+
+    <!-- Header /// +"_page-header.scss"  -->
+
+    <div class="header-bgimage"></div>
+    <header class=" page-header">
+
+        <nav class="nav container ">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.svg" alt="logo" class="logo__img" />
+            </a>
+            <ul class="site-nav">
+                <li class="site-nav__item">
+                    <a href="./guitars.html" class="site-nav__link">Guitars</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="" class="site-nav__link">Accessories</a>
+                </li>
+                <li class="site-nav__item"><a href="/storage.html   " class="site-nav__link">Storage</a></li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Lessons</a></li>
+                <li class="site-nav__item">
+                    <a href="" class="site-nav__link current">Repairs</a>
+                </li>
+            </ul>
+            <ul class="auth-nav">
+                <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="24"
+                            height="24">
+                            <use href="./images/icons.svg#buy"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="24"
+                            height="24">
+                            <use href="./images/icons.svg#account"></use>
+                        </svg>
+                    </a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container ">
+
+            <!-- Section Hero /// +"_hero.scss"  -->
+
+            <section class="hero container">
+                <h1 class="hero__title">
+                    Fullfilling dreams with strings attached
+                </h1>
+                <!-- Lesson call out -->
+                <article class="hero__article">
+                    <!-- <img src="./images/article-lesson.png" alt="" width="1264" height="280" /> -->
+                    <h2 class="hero__subtitle">FREE GUITAR LESSONS!</h2>
+                    <p class="hero__content">
+                        Purchase any guitar over $499.99 and recieve a
+                        one-hour guitar lesson free.
+                    </p>
+                    <!-- <a href="https://www.google.com" class="hero__btn button" target="_blank" data-modal-open>LEARN
+                        MORE</a> -->
+                    <button class="button hero__btn" type="hero__btn" data-modal-open>LEARN
+                        MORE</button>
+
+                </article>
+
+                <!-- Backdrop /// +"_backdrop.scss"  -->
+
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal-wrapper">
+
+
+                        <div class="contact-left">
+                            <h2 class="contact-left__title">Send us a message</h2>
+                            <form class="modal-form" name="modal-form">
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="text" name="user-name"
+                                        placeholder="your name..">
+                                    <span class="modal-form__label">Name</span>
+                                </label>
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="tel" name="user-phone"
+                                        placeholder="+1-234..">
+                                    <span class="modal-form__label">Phone</span>
+                                </label>
+                                <label class="modal-form__group">
+                                    <input class="modal-form__input" type="email" name="user-mail"
+                                        placeholder="email@..">
+                                    <span class="modal-form__label">Email</span>
+                                </label>
+                                <label class="modal-form__group">
+                                    <textarea class="modal-form__textarea" name="message" cols="30" rows="5"
+                                        placeholder="write your message.."></textarea>
+                                    <span class="modal-form__label">Message</span>
+                                </label>
+                                <label class="modal-form__group modal-form__checkbox">
+                                    <input class="modal-form__checkbox visually-hidden" type="checkbox">
+                                    <span class="modal-form__custom-checkbox">
+                                        <svg class="modal-form__custom-checkbox-icon" width="15" height="15">
+                                            <use href="./images/icons.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="modal-form__policy-desc modal-form__label">I agree to the processing of
+                                        personal data</span>
+                                </label>
+
+
+                            </form>
+
+
+                            <button class="button" data-modal-close>Send</button>
+
+                        </div>
+
+                        <div class="contact-right">
+                            <h2 class="contact-right__title">Contact us</h2>
+                            <p class="contact-right__subtitle">We're op en for any suggestion or just to have a chat</p>
+                            <div class="contact-group">
+                                <span class="contact-group__icon">
+                                    <svg class="contact-group__faicon" width="15" height="15">
+                                        <use href="./images/icons.svg#location"></use>
+                                    </svg>
+                                </span>
+                                <p class="contact-group__text"><b>Address : </b><a class="contact-group__link"
+                                        href="https://goo.gl/maps/p9w6qvtk8zfSsdNc8" target="_blank">807 5th Ave, New
+                                        York, NY 10065, USA</a> </p>
+                            </div>
+                            <div class="contact-group">
+                                <span class="contact-group__icon">
+                                    <svg class="contact-group__faicon" width="15" height="15">
+                                        <use href="./images/icons.svg#phone"></use>
+                                    </svg>
+                                </span>
+                                <p class="contact-group__text"><b>Phone : </b><a class="contact-group__link"
+                                        href="tel:+1233 4556 77">+1233 4556 77</a></p>
+                            </div>
+                            <div class="contact-group">
+                                <span class="contact-group__icon">
+                                    <svg class="contact-group__faicon" width="15" height="15">
+                                        <use href="./images/icons.svg#email"></use>
+                                    </svg>
+                                </span>
+                                <p class="contact-group__text"><b>Email : </b><a class="contact-group__link"
+                                        href="mailto:info@site.com">info@site.com</a></p>
+                            </div>
+                            <div class="contact-group">
+                                <span class="contact-group__icon">
+                                    <svg class="contact-group__faicon" width="15" height="15">
+                                        <use href="./images/icons.svg#earth"></use>
+                                    </svg>
+                                </span>
+                                <p class="contact-group__text"><b>Website : </b><a class="contact-group__link"
+                                        href="/index.html" target="_blank">www.web-guitars.com</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- New Product section  ///  +"_products.scss" -->
+
+        <div class="container">
+            <section class="products">
+                <h2 class="section__title">New Products</h2>
+                <ul class="card-set">
+                    <li class="card-set__item" data-aos="fade-down">
+                        <a class="card-set__link" href="">
+                            <div class="card-set__pic--position">
+                                <img class="card-set__pic" src="./images/guitar-1.png" alt="brand name" width="314"
+                                    height="260" />
+                            </div>
+
+                            <h3 class="card-set__title">
+                                Brand Name <span>$2,995</span>
+                            </h3>
+                            <p class="card-set__content">
+                                Product description here
+                            </p>
+                            <p class="card-set__desc"><b>0</b> colors available</p>
+                        </a>
+                    </li>
+                    <li class="card-set__item" data-aos="fade-up">
+                        <a class="card-set__link" href="">
+                            <div class="card-set__pic--position">
+                                <img class="card-set__pic" src="./images/guitar-2.png" alt="brand name" width="314"
+                                    height="260" />
+                            </div>
+
+                            <h3 class="card-set__title">
+                                Brand Name <span>$2,995</span>
+                            </h3>
+                            <p class="card-set__content">
+                                Product description here
+                            </p>
+                            <p class="card-set__desc"><b>0</b> colors available</p>
+                        </a>
+                    </li>
+                    <li class="card-set__item" data-aos="fade-down">
+                        <a class="card-set__link" href="">
+                            <div class="card-set__pic--position">
+                                <img class="card-set__pic" src="./images/guitar-3.png" alt="brand name" width="314"
+                                    height="260" />
+                            </div>
+
+                            <h3 class="card-set__title">
+                                Brand Name <span>$2,995</span>
+                            </h3>
+                            <p class="card-set__content">
+                                Product description here
+                            </p>
+                            <p class="card-set__desc"><b>0</b> colors available</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
+        </div>
+
+        <!-- Popular Finds section  ///  +"_finds.scss" -->
+
+        <section class="finds container">
+            <h2 class="section__title finds-title">Popular Finds</h2>
+            <ul class="card-set">
+                <li class="card-set__item">
+                    <a href="" class="card-set__link"><img class="card-set__img" src="./images/finds-1.png"
+                            alt="finds" />
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link"><img class="card-set__img" src="./images/finds-2.png"
+                            alt="finds" />
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                    </a>
+                </li>
+                <li class="card-set__item">
+                    <a href="" class="card-set__link"><img class="card-set__img" src="./images/finds-3.png"
+                            alt="finds" />
+                        <h3 class="card-set__title">
+                            Brand Name <span>$2,995</span>
+                        </h3>
+                        <p class="card-set__content">
+                            Product description here
+                        </p>
+                        <p class="card-set__desc"><b>0</b> colors available</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Gear Heads section  ///  +"_gearheads.scss" -->
+
+        <section class="gear container">
+            <h2 class="section__title gear__title">Gear Heads</h2>
+            <ul class="gear-set">
+                <li class="gear-set__item" $anm1>
+                    <a href=""><img src="./images/gear-1.jpg" alt="heads img" width="616" height="487" /></a>
+                    <div class="gear-set__content">
+                        <h3 class="gear-set__title">Article Title</h3>
+                        <p class="gear-set__subtitle">Article Subhead</p>
+                    </div>
+                </li>
+
+                <li></li>
+                <li class="gear-set__item gear-set__item--mode-light gsi__nomargin" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <a href=""><img src="./images/gear-2.jpg" alt="heads img" width="616" height="487" /></a>
+                    <div class="gear-set__content">
+                        <h3 class="gear-set__title gear-set__title--mode-dark">Article Title</h3>
+                        <p class="gear-set__subtitle gear-set__subtitle--mode-light">
+                            Article Subhead
+                        </p>
+                    </div>
+
+                </li>
+                <li class="gear-set__item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <a href=""><img src="./images/gear-3.jpg" alt="heads img" width="400" height="480" /></a>
+                    <div class="gear-set__content">
+                        <h3 class="gear-set__title">Article Title</h3>
+                        <p class="gear-set__subtitle">Article Subhead</p>
+                    </div>
+
+                </li>
+                <li class="gear-set__item gear-set__item--mode-light">
+                    <a href=""><img src="./images/gear-4.jpg" alt="heads img" width="400" height="480" /></a>
+                    <div class="gear-set__content">
+                        <h3 class="gear-set__title gear-set__title--mode-dark">Article Title</h3>
+                        <p class="gear-set__subtitle gear-set__subtitle--mode-light">
+                            Article Subhead
+                        </p>
+                    </div>
+
+                </li>
+                <li class="gear-set__item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <a href=""><img src="./images/gear-5.jpg" alt="heads img" width="400" height="480" /></a>
+                    <div class="gear-set__content">
+                        <h3 class="gear-set__title">Article Title</h3>
+                        <p class="gear-set__subtitle">Article Subhead</p>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer  ///  +"_footer.scss"  -->
+
+    <footer class="footer">
+        <div class="footer-nav container">
+            <ul class="footer-nav__account footer-nav--after">
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link"><b>My Account</b></a>
+                </li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Overview</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Order History</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Wishlist</a></li>
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link">Account information</a>
+                </li>
+            </ul>
+            <ul class="footer-nav__store footer-nav--after">
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link"><b>Store</b></a>
+                </li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Security Notice</a></li>
+                <li class="footer-nav__item">
+                    <a href="" class="footer-nav__link">Location & Hours</a>
+                </li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Rentals</a></li>
+                <li class="footer-nav__item"><a href="" class="footer-nav__link">Privacy Notice</a></li>
+            </ul>
+            <div class="foooter-contact">
+
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.svg" alt="logo" class="logo__img" />
+                </a>
+                <ul class="contact-social__list">
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="YouTube link"><svg class="contact-social__icon" width="22" height="20">
+                                <use href="./images/icons.svg#youtube"></use>
+                            </svg></a></li>
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Twitter link"><svg class="contact-social__icon" width="20" height="20">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg></a></li>
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Instagram link"><svg class="contact-social__icon" width="20" height="20">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg></a></li>
+                    <li class="contact-social__item"><a class="contact-social__link" href=""
+                            aria-label="Facebook link"><svg class="contact-social__icon" width="20" height="20">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foooter-copyright">
+            <p class="foooter-copyright__text container">&copy;2023 Music Store</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" type="button">
+        <svg width="30" height="30">
+            <use href="./images/icons.svg#arrow-up"></use>
+        </svg>
+    </button>
+
+
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+
+</body>
+
+</html>
