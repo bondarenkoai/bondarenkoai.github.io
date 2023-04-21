@@ -1,0 +1,38 @@
+.header-bgimage {
+  position: absolute;
+  background-color: rgba(2, 6, 11, 0.7);
+  background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%), url(/images/hero-bgi.jpg);
+  width: 100%;
+  height: 808px;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  z-index: -1;
+}
+
+.page-header {
+  padding-top: 56px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  margin-left: 40px;
+  display: flex;
+}
+
+.auth-nav {
+  margin-right: 46px;
+  margin-left: auto;
+  display: flex;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 56px;
+}/*# sourceMappingURL=styles.css.map */
